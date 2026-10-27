@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="旅行手帳">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="theme-color" content="#6EC6EA">
+<meta name="format-detection" content="telephone=no">
+<meta name="application-name" content="旅行手帳">
+<title>旅行手帳 · Itinerary</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="icons/apple-touch-icon-167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Noto+Serif+TC:wght@500;700&family=Noto+Sans+TC:wght@400;500;700&family=Courier+Prime:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5EFDC;
+  --paper-2:#EDE3C6;
+  --card:#FBF7EB;
+  --ink:#25314D;
+  --navy:#2C7DA8;
+  --navy-bg:#6EC6EA;
+  --navy-2:#4FB0DE;
+  --blue:#2A5C82;
+  --gold:#A8791F;
+  --green:#4B6B4F;
+  --red:#A13D2B;
+  --muted:#8B7E63;
+  --line:#D8CCA8;
+  --shadow: 0 6px 18px rgba(27,42,74,0.12);
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;}
+body{
+  background:
+    radial-gradient(circle at 15% 8%, rgba(42,92,130,0.06), transparent 45%),
+    radial-gradient(circle at 85% 92%, rgba(161,61,43,0.05), transparent 40%),
+    var(--paper);
+  color:var(--ink);
+  font-family:'Noto Sans TC', -apple-system, sans-serif;
+  min-height:100vh;
+  padding-bottom:calc(60px + env(safe-area-inset-bottom));
+  -webkit-text-size-adjust:100%;
+  overscroll-behavior-y:none;
+}
+.stamp-font{font-family:'Special Elite', 'Courier Prime', monospace;}
+.serif{font-family:'Noto Serif TC', serif;}
+
+/* ===== Airmail border strip ===== */
+.airmail-strip{
+  height:8px;
+  background: repeating-linear-gradient(135deg,
+    var(--navy-bg) 0 14px, var(--card) 14px 20px,
+    var(--red) 20px 34px, var(--card) 34px 40px,
+    var(--blue) 40px 54px, var(--card) 54px 60px);
+}
+
+/* ===== Header ===== */
+header{
+  background: linear-gradient(155deg, var(--navy-bg), var(--navy-2));
+  color:#F3ECD6;
+  padding:22px 18px 26px;
+  position:relative;
+  overflow:hidden;
+}
+header::after{
+  content:"";
+  position:absolute; inset:0;
+  background: repeating-linear-gradient(0deg, rgba(255,255,255,0.02) 0 2px, transparent 2px 4px);
+  pointer-events:none;
+}
+.eyebrow{
+  font-family:'Special Elite', monospace;
+  font-size:11px;
+  letter-spacing:3px;
+  color:#fff6e0;
+  text-shadow:0 1px 3px rgba(20,50,70,0.35);
+  text-transform:uppercase;
+  margin-bottom:6px;
+}
+.title-input{
+  width:100%;
+  background:transparent;
+  border:none;
+  border-bottom:1px dashed rgba(255,255,255,0.55);
+  color:#FFFFFF;
+  text-shadow:0 1px 4px rgba(20,50,70,0.3);
+  font-family:'Noto Serif TC', serif;
+  font-weight:700;
+  font-size:26px;
+  padding:4px 0 8px;
+  outline:none;
+}
+.title-input::placeholder{color:rgba(255,255,255,0.55);}
+.meta-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px 14px;
+  margin-top:16px;
+}
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+.field label{
+  font-size:10px;
+  letter-spacing:2px;
+  color:#0E3E58;
+  text-shadow:0 1px 1px rgba(255,255,255,0.3);
+  font-family:'Special Elite', monospace;
+  text-transform:uppercase;
+}
+.field input{
+  background:rgba(255,255,255,0.62);
+  border:1px solid rgba(255,255,255,0.8);
+  border-radius:4px;
+  color:var(--ink);
+  padding:8px 9px;
+  font-size:14.5px;
+  font-family:'Courier Prime', monospace;
+  outline:none;
+}
+.field input:focus{border-color:#C9A24B;}
+.field-full{grid-column:1/-1;}
+
+.tag-editor{
+  display:flex; flex-wrap:wrap; gap:6px;
+  background:rgba(255,255,255,0.62);
+  border:1px solid rgba(255,255,255,0.8);
+  border-radius:6px;
+  padding:7px 8px;
+}
+.tag-editor:focus-within{border-color:#C9A24B;}
+.tag-chip{
+  display:inline-flex; align-items:center; gap:5px;
+  background:rgba(255,255,255,0.9);
+  border:1px solid rgba(201,162,75,0.55);
+  color:var(--ink);
+  border-radius:20px;
+  padding:4px 6px 4px 11px;
+  font-size:12.5px;
+  font-family:'Courier Prime', monospace;
+}
+.tag-chip button{
+  border:none; background:none; color:var(--red); opacity:.85;
+  cursor:pointer; font-size:13px; line-height:1; padding:2px 3px;
+}
+.tag-editor input{
+  flex:1; min-width:70px;
+  background:transparent; border:none; outline:none;
+  color:var(--ink); font-size:13.5px; font-family:'Courier Prime', monospace;
+  padding:4px 2px;
+}
+.tag-editor input::placeholder{color:rgba(37,49,77,0.45);}
+
+/* ===== Day tabs (boarding-pass stubs) ===== */
+.day-tabs{
+  position:relative;
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding:16px 14px 6px;
+  scroll-snap-type:x proximity;
+}
+.day-tab{
+  flex:0 0 auto;
+  scroll-snap-align:start;
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:9px 13px;
+  min-width:84px;
+  text-align:center;
+  cursor:pointer;
+  position:relative;
+  box-shadow:var(--shadow);
+}
+.day-tab{-webkit-user-select:none; user-select:none; -webkit-touch-callout:none;}
+.day-tabs.tab-sorting{scroll-snap-type:none;}
+.day-tabs.tab-sorting .day-tab:not(.dragging){transition:transform .16s ease;}
+.day-tab.dragging{z-index:20; transition:none !important; box-shadow:0 12px 24px rgba(27,42,74,0.35); opacity:.95;}
+.tabs-hint{font-size:11px; color:var(--muted); margin-left:auto; text-align:right; line-height:1.4;}
+.day-tab::before, .day-tab::after{
+  content:"";
+  position:absolute;
+  width:12px;height:12px;
+  background:var(--paper);
+  border-radius:50%;
+  top:50%; transform:translateY(-50%);
+}
+.day-tab::before{left:-6px;}
+.day-tab::after{right:-6px;}
+.day-tab .dnum{
+  font-family:'Special Elite', monospace;
+  font-size:18px;
+  color:var(--navy);
+}
+.day-tab .ddate{
+  font-size:10.5px;
+  color:var(--muted);
+  font-family:'Courier Prime', monospace;
+  margin-top:2px;
+}
+.day-tab .dwk{
+  font-size:10px;
+  color:var(--muted);
+}
+.day-tab.active{
+  background:var(--navy-bg);
+  border-color:var(--navy-bg);
+}
+.day-tab.active .dnum{color:#8A6414;}
+.day-tab.active .ddate, .day-tab.active .dwk{color:#0E3E58; opacity:.85;}
+
+/* 已過的日子：灰色票根 + ✓ ；今天：金色外框 + 「今天」徽章 */
+.day-tab.past{background:#E3DFD2; border-color:#CFC9B6; box-shadow:none;}
+.day-tab.past .dnum{color:#8E8A7A;}
+.day-tab.past .ddate, .day-tab.past .dwk{color:#9A9684;}
+.day-tab.past.active{background:#B9C9CF; border-color:#B9C9CF;}
+.day-tab.past.active .dnum{color:#5E6B66;}
+.day-tab.past.active .ddate, .day-tab.past.active .dwk{color:#3F4F55; opacity:.9;}
+.day-tab .dmark{font-size:11px; margin-left:3px; color:#6F9577;}
+.day-tab.today{border-color:#C9A24B; box-shadow:0 0 0 2px rgba(201,162,75,0.5), var(--shadow);}
+.day-tab .dbadge{
+  position:absolute; top:-9px; left:50%; transform:translateX(-50%);
+  background:#C9A24B; color:#fff; font-size:9.5px; letter-spacing:1px;
+  padding:1px 8px; border-radius:9px; white-space:nowrap; z-index:2;
+}
+.tabs-actions{
+  display:flex;
+  gap:8px;
+  padding:0 14px 14px;
+  align-items:center;
+}
+.tabs-actions .stepper{
+  display:flex; align-items:center; gap:8px;
+  background:var(--card); border:1px solid var(--line);
+  border-radius:8px; padding:6px 10px;
+}
+.tabs-actions button{
+  border:none; background:var(--navy-bg); color:#0E3E58;
+  width:26px; height:26px; border-radius:6px; font-size:15px; cursor:pointer; font-weight:700;
+}
+.tabs-actions .count{font-family:'Courier Prime', monospace; font-size:13px; min-width:70px; text-align:center;}
+
+/* ===== Day panel ===== */
+main{padding:6px 14px 20px; max-width:640px; margin:0 auto;}
+.day-panel{
+  background:var(--card);
+  border-radius:14px;
+  border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  padding:16px 16px 8px;
+  animation: fadein .25s ease;
+}
+@keyframes fadein{from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:none;}}
+
+.day-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:10px;
+}
+.stamp{
+  width:56px; height:56px;
+  border:2px dashed #C9A24B;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  flex-direction:column;
+  transform:rotate(-8deg);
+  color:var(--navy);
+  flex:0 0 auto;
+}
+.stamp b{font-family:'Special Elite', monospace; font-size:16px; line-height:1;}
+.stamp span{font-size:8px; letter-spacing:1px; color:var(--muted);}
+.day-head-text{flex:1; min-width:0;}
+.day-head-text .dh-date{
+  font-family:'Courier Prime', monospace;
+  font-size:15px; color:var(--navy); font-weight:700;
+}
+.day-head-text .dh-wk{color:var(--muted); font-size:12.5px;}
+/* 當日面板：已過 = 灰色調，今天 = 金色實線印章 */
+.day-past .stamp{border-color:#A9A593; color:#8E8A7A;}
+.day-past .stamp span{color:#8E8A7A;}
+.day-past .day-head-text .dh-date{color:#8E8A7A;}
+.day-past .cat-section{filter:grayscale(0.45);}
+.day-today .stamp{border-style:solid; background:rgba(201,162,75,0.16);}
+.day-today .stamp span{color:#8A6414; font-weight:700;}
+.del-day{
+  border:none; background:none; color:var(--red); font-size:12px;
+  cursor:pointer; text-decoration:underline; white-space:nowrap;
+}
+
+.row2{display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px;}
+.mini-field label{font-size:10px; color:var(--muted); letter-spacing:1px;}
+.mini-field input, .mini-field textarea, .mini-field select{
+  width:100%;
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:7px 8px;
+  font-size:13.5px;
+  font-family:'Noto Sans TC', sans-serif;
+  background:#fff;
+  color:var(--ink);
+  outline:none;
+}
+.mini-field textarea{resize:none; overflow:hidden; min-height:34px;}
+.mini-field input:focus, .mini-field textarea:focus, .mini-field select:focus{border-color:var(--blue);}
+
+/* ===== Category sections ===== */
+.cat-section{
+  margin-top:14px;
+  border-radius:12px;
+  padding:12px 11px 14px;
+}
+.cat-head{
+  display:flex; align-items:center; gap:8px;
+  padding-bottom:6px; margin-bottom:10px;
+  border-bottom:1.5px solid rgba(0,0,0,0.1);
+}
+.cat-dot{width:9px; height:9px; border-radius:50%;}
+.cat-drag{
+  font-size:17px; line-height:1; padding:5px 9px; margin-left:-4px;
+  border-radius:6px; background:rgba(0,0,0,0.06); color:var(--muted);
+  cursor:grab; touch-action:none; -webkit-user-select:none; user-select:none; -webkit-touch-callout:none;
+}
+.cat-section.dragging{z-index:30; box-shadow:0 12px 26px rgba(27,42,74,0.3); transition:none !important; position:relative;}
+#dayPanel.sorting-cats .item-list, #dayPanel.sorting-cats .add-item-btn{display:none;}
+#dayPanel.sorting-cats .cat-section{transition:transform .16s ease;}
+#dayPanel.sorting-cats .cat-head{margin-bottom:0; border-bottom:none; padding-bottom:0;}
+.cat-title{
+  font-family:'Special Elite', monospace;
+  font-size:12px; letter-spacing:2px; text-transform:uppercase;
+}
+.cat-count{
+  font-size:11px; color:var(--muted); margin-left:auto;
+  font-family:'Courier Prime', monospace;
+}
+.add-item-btn{
+  border:1px dashed var(--line);
+  background:transparent;
+  border-radius:7px;
+  padding:8px;
+  width:100%;
+  color:var(--muted);
+  font-size:12.5px;
+  cursor:pointer;
+  margin-top:6px;
+}
+.add-item-btn:active{background:var(--paper-2);}
+
+.item-card{
+  position:relative;
+  background:#fff;
+  border-radius:9px;
+  border:1px solid var(--line);
+  padding:11px 12px 10px 16px;
+  margin-bottom:10px;
+}
+.item-card::before{
+  content:"";
+  position:absolute; left:0; top:8px; bottom:8px; width:4px;
+  border-radius:3px;
+}
+.item-card .punch{
+  position:absolute; left:-1px; top:50%; transform:translate(-50%,-50%);
+  width:9px; height:9px; border-radius:50%;
+  background:var(--card);
+  border:1px solid var(--line);
+}
+.item-top{display:grid; grid-template-columns:82px 1fr auto; gap:7px; align-items:center;}
+.item-top-min{display:flex; justify-content:space-between; align-items:center; margin-bottom:2px;}
+.drag-handle{
+  display:inline-flex; align-items:center; gap:5px;
+  font-size:11.5px; color:var(--muted);
+  padding:5px 11px; border-radius:6px;
+  background:rgba(0,0,0,0.05);
+  cursor:grab;
+  touch-action:none;
+  -webkit-user-select:none; user-select:none;
+  -webkit-touch-callout:none;
+}
+.drag-handle:active{cursor:grabbing;}
+.item-card.dragging{
+  z-index:30;
+  box-shadow:0 12px 26px rgba(27,42,74,0.28);
+  transition:none !important;
+}
+.item-list.sorting .item-card:not(.dragging){transition:transform .16s ease;}
+body.is-sorting{-webkit-user-select:none; user-select:none;}
+.item-top-min .rm-item{
+  font-size:11.5px; color:var(--red); border:1px solid rgba(161,61,43,0.3);
+  border-radius:6px; padding:3px 8px; background:rgba(161,61,43,0.06);
+}
+.field-wrap{position:relative; display:flex; align-items:center; min-width:0;}
+.item-top input.time-input{
+  border:1px solid var(--line); border-radius:6px; padding:6px 20px 6px 6px;
+  font-family:'Courier Prime', monospace; font-size:12.5px; text-align:center;
+  width:100%;
+}
+.item-top input.title-input2{
+  border:1px solid var(--line); border-radius:6px; padding:6px 22px 6px 8px; font-size:13.5px;
+  width:100%;
+}
+.mini-clear{
+  position:absolute; right:4px; top:50%; transform:translateY(-50%);
+  border:none; background:none; color:var(--muted); opacity:.7;
+  font-size:11px; line-height:1; cursor:pointer; padding:3px;
+}
+.rm-item{border:none; background:none; color:var(--red); font-size:16px; cursor:pointer; padding:2px 4px;}
+.item-body{margin-top:7px; display:flex; flex-direction:column; gap:6px;}
+.item-body textarea{
+  border:1px solid var(--line); border-radius:6px; padding:6px 8px; font-size:12.5px;
+  min-height:32px; resize:none; overflow:hidden; font-family:'Noto Sans TC',sans-serif;
+}
+button.pdf-label{cursor:pointer; border:1px solid var(--line);}
+.link-row{display:flex; gap:6px; align-items:center; flex-wrap:wrap;}
+.link-row input[type=url]{
+  flex:1; min-width:120px; border:1px solid var(--line); border-radius:6px; padding:6px 8px; font-size:12px;
+  font-family:'Courier Prime', monospace;
+}
+.pdf-label{
+  border:1px solid var(--line); border-radius:6px; padding:6px 9px; font-size:11.5px;
+  cursor:pointer; color:var(--muted); background:var(--paper); white-space:nowrap;
+}
+.pdf-label input{display:none;}
+.chip{
+  display:inline-flex; align-items:center; gap:5px;
+  background:var(--paper-2); border-radius:20px; padding:4px 8px 4px 10px;
+  font-size:11.5px; color:var(--ink); max-width:100%;
+}
+.chip a{color:var(--navy); text-decoration:none; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; max-width:150px;}
+.chip-open{
+  border:none; background:none; padding:0; cursor:pointer;
+  color:var(--navy); text-decoration:underline; overflow:hidden;
+  text-overflow:ellipsis; white-space:nowrap; max-width:150px;
+  font-size:11.5px; font-family:'Noto Sans TC', sans-serif;
+}
+.chip button{border:none; background:none; color:var(--red); cursor:pointer; font-size:13px; padding:0 2px;}
+
+/* category colors — light tint per section so the 4 columns are clearly separated */
+.c-itinerary{color:var(--navy); background:rgba(44,125,168,0.08);}
+.c-itinerary .cat-dot{background:var(--navy);}
+.c-itinerary .item-card::before{background:var(--navy);}
+
+.c-transport{color:var(--blue); background:rgba(42,92,130,0.07);}
+.c-transport .cat-dot{background:var(--blue);}
+.c-transport .item-card::before{background:var(--blue);}
+
+.c-ticket{color:var(--gold); background:rgba(168,121,31,0.09);}
+.c-ticket .cat-dot{background:var(--gold);}
+.c-ticket .item-card::before{background:var(--gold);}
+
+.c-restaurant{color:var(--green); background:rgba(75,107,79,0.08);}
+.c-restaurant .cat-dot{background:var(--green);}
+.c-restaurant .item-card::before{background:var(--green);}
+
+.c-hotel{color:#7A5A9A; background:rgba(122,90,154,0.09);}
+.c-hotel .cat-dot{background:#7A5A9A;}
+.c-hotel .item-card::before{background:#7A5A9A;}
+
+/* ===== Footer toolbar ===== */
+.toolbar{
+  max-width:640px; margin:22px auto 0; padding:0 14px;
+  display:flex; gap:10px; flex-wrap:wrap;
+}
+.tbtn{
+  flex:1; min-width:120px;
+  border:1px solid var(--navy-bg);
+  background:var(--navy-bg); color:#0E3E58;
+  border-radius:9px; padding:11px; font-size:13px; cursor:pointer;
+  font-weight:600;
+  font-family:'Noto Sans TC', sans-serif;
+}
+.tbtn.ghost{background:transparent; color:var(--navy);}
+.tbtn.danger{border-color:var(--red); color:var(--red); background:transparent;}
+input[type=file].hidden-file{display:none;}
+.tabs-actions .set-btn, .set-btn{
+  width:auto; height:auto; white-space:nowrap; flex:0 0 auto;
+  border:1px solid var(--line); background:var(--card); color:var(--navy);
+  border-radius:8px; padding:8px 13px; font-size:13px; font-weight:700; cursor:pointer;
+  font-family:'Noto Sans TC',sans-serif; box-shadow:var(--shadow);
+}
+.tabs-actions .set-btn[aria-expanded="true"], .set-btn[aria-expanded="true"]{background:var(--navy-bg); border-color:var(--navy-bg); color:#0E3E58;}
+.settings-card[hidden]{display:none;}
+.settings-card{
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  box-shadow:var(--shadow); margin-bottom:14px;
+}
+.set-body{padding:0 15px 15px; display:flex; flex-direction:column; gap:8px;}
+.set-title{
+  display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:10px;
+  padding-bottom:5px; border-bottom:1.5px solid var(--line);
+  font-family:'Special Elite','Noto Sans TC',monospace; font-size:12.5px; letter-spacing:1.5px; color:var(--ink);
+}
+.set-title:first-child{margin-top:2px;}
+.set-note{margin:0; font-size:12px; line-height:1.65; color:var(--muted);}
+.set-actions{display:flex; gap:8px; flex-wrap:wrap;}
+.set-actions .tbtn{min-width:0; flex:1 1 90px;}
+.sub{background:rgba(0,0,0,0.03); border-radius:8px; padding:8px 10px;}
+.sub > summary{cursor:pointer; font-size:12.5px; color:var(--navy);}
+.sub .tbtn{margin-top:8px; width:100%;}
+.sync-steps code{background:rgba(0,0,0,0.07); border-radius:4px; padding:0 4px; font-size:11.5px;}
+.link-btn{align-self:flex-start; border:none; background:none; padding:2px 0; font-size:12px; color:var(--red); text-decoration:underline; cursor:pointer;}
+.chk-list{list-style:none; margin:0 0 12px; padding:0; font-size:13px; line-height:1.5;}
+.chk-list li{padding:5px 0; border-bottom:1px dashed var(--line);}
+.chk-list li.info{color:var(--ink);}
+.chk-list li.ok{color:var(--green);} .chk-list li.bad{color:var(--red); font-weight:700;}
+.chk-list small{display:block; font-weight:400; color:var(--muted); font-size:11.5px; margin-top:1px;}
+.chk-prev{display:flex; gap:10px; justify-content:center; margin:0 0 14px;}
+.chk-prev img{width:56px; height:56px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.25);}
+.chk-prev img.mask{border-radius:50%;}
+.dlg-back{position:fixed; inset:0; z-index:1000; background:rgba(15,40,60,0.5); display:flex; align-items:center; justify-content:center; padding:20px;}
+.dlg{background:var(--card); border-radius:14px; padding:18px 16px 14px; max-width:360px; width:100%; box-shadow:0 18px 40px rgba(0,0,0,0.35);}
+.dlg h4{margin:0 0 8px; font-size:15px; color:var(--ink);}
+.dlg p{margin:0 0 14px; font-size:13px; line-height:1.65; color:var(--ink); white-space:pre-line;}
+.dlg .dlg-btns{display:flex; flex-direction:column; gap:8px;}
+.dlg .dlg-btns button{border:1px solid var(--navy-bg); background:var(--navy-bg); color:#0E3E58; border-radius:9px; padding:11px; font-size:13.5px; font-weight:600; cursor:pointer; font-family:'Noto Sans TC',sans-serif;}
+.dlg .dlg-btns button.danger{background:transparent; border-color:var(--red); color:var(--red);}
+.dlg .dlg-btns button.plain{background:transparent; border-color:var(--line); color:var(--muted); font-weight:500;}
+.sync-card{
+  max-width:612px; width:calc(100% - 28px); margin:18px auto 0; padding:12px 14px;
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  box-shadow:var(--shadow);
+}
+.sync-head{display:flex; align-items:center; justify-content:space-between; gap:8px;}
+.sync-title{font-weight:700; font-size:14px; color:var(--navy);}
+.sync-state{font-size:11.5px; color:var(--muted); font-family:'Courier Prime', monospace; text-align:right;}
+.sync-state.ok{color:var(--green);} .sync-state.err{color:var(--red);} .sync-state.busy{color:var(--gold);}
+.sync-card summary{font-size:12.5px; color:var(--muted); margin-top:8px; cursor:pointer;}
+.sync-body{margin-top:10px; display:flex; flex-direction:column; gap:8px;}
+.sync-steps{margin:0; padding-left:18px; font-size:12.5px; line-height:1.6; color:var(--ink);}
+.sync-label{font-size:11px; color:var(--muted); letter-spacing:1px; margin-top:2px;}
+.sync-input{
+  width:100%; border:1px solid var(--line); border-radius:6px; padding:8px 9px;
+  font-size:13px; font-family:'Courier Prime', monospace; background:#fff; color:var(--ink); outline:none;
+}
+.sync-pw{position:relative; display:flex;}
+.sync-pw .sync-input{padding-right:58px;}
+.pw-toggle{
+  position:absolute; right:5px; top:50%; transform:translateY(-50%);
+  border:none; background:rgba(0,0,0,0.06); color:var(--muted);
+  border-radius:6px; padding:5px 9px; font-size:12px; cursor:pointer;
+}
+.sync-check{font-size:12.5px; display:flex; align-items:center; gap:6px;}
+.sync-actions{display:flex; gap:8px; flex-wrap:wrap;}
+.sync-actions .tbtn{min-width:0;}
+.save-note{
+  text-align:center; font-size:11px; color:var(--muted); margin-top:10px;
+  font-family:'Courier Prime', monospace;
+}
+.empty-days{
+  text-align:center; color:var(--muted); padding:30px 10px; font-size:13px;
+}
+.pdf-modal{
+  position:fixed; inset:0; z-index:999;
+  display:flex; flex-direction:column;
+  background:#12222E;
+}
+.pdf-modal.hidden{display:none;}
+.pdf-modal-bar{
+  display:flex; align-items:center; gap:8px;
+  padding:calc(10px + env(safe-area-inset-top)) 12px 10px;
+  background:var(--navy-bg);
+}
+.pdf-modal-title{
+  flex:1; color:#0E3E58; font-size:13px; font-weight:600;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+.pdf-modal-btn{
+  border:none; background:rgba(255,255,255,0.75); color:#0E3E58;
+  border-radius:7px; padding:7px 11px; font-size:12.5px;
+  text-decoration:none; cursor:pointer; white-space:nowrap;
+  font-family:'Noto Sans TC', sans-serif;
+}
+.pdf-modal-frame{flex:1; border:none; width:100%; background:#fff;}
+@media (max-width:380px){
+  .item-top{grid-template-columns:70px 1fr auto;}
+}
+</style>
+</head>
+<body>
+<div class="airmail-strip"></div>
+<header>
+  <div class="eyebrow">退休環遊世界</div>
+  <input id="tripTitle" class="title-input" placeholder="行程標題，例如：東京賞楓之旅" />
+  <div class="meta-grid">
+    <div class="field field-full"><label>城市 CITIES（可新增多個）</label><div class="tag-editor" id="cityTags"></div></div>
+    <div class="field"><label>出發日期 START</label><input id="tripStart" type="date"></div>
+    <div class="field"><label>天數 DAYS</label><input id="tripDaysNum" type="number" min="1" max="60"></div>
+  </div>
+</header>
+
+<div class="day-tabs" id="dayTabs"></div>
+<div class="tabs-actions">
+  <div class="stepper">
+    <button id="daysMinus">−</button>
+    <span class="count" id="daysCountLabel">共 0 天</span>
+    <button id="daysPlus">＋</button>
+  </div>
+  <button type="button" class="set-btn" id="btnSettings" aria-expanded="false" aria-controls="settingsCard">⚙️ 設定</button>
+</div>
+
+<main>
+  <div class="settings-card" id="settingsCard" hidden>
+    <div class="set-body">
+
+      <div class="set-title">☁ Google Drive 同步 <span class="sync-state" id="syncState">未設定</span></div>
+      <p class="set-note">資料會存在你自己 Google Drive 的「旅行手帳」資料夾裡。每次覆蓋雲端前，舊版本會自動留一份備份。</p>
+
+      <details class="sub">
+        <summary>第一次設定怎樣做？</summary>
+        <ol class="sync-steps">
+          <li>用瀏覽器開 <b>script.google.com</b>，新增專案。</li>
+          <li>把 <code>Code.gs</code> 裡的內容<b>全部刪掉</b>，按下面「複製程式碼」後貼上，並把第一行的密碼改成你自己的。</li>
+          <li>「部署」→「新增部署作業」→ 類型「網頁應用程式」→ 執行身分「我」、存取權「所有人」→ 部署並授權。（如果你之前部署過舊版，貼上新程式碼後要「管理部署作業」→ 編輯 → 新版本 → 部署。）</li>
+          <li>把「網頁應用程式網址」（<code>/exec</code> 結尾）和同一個密碼填在下面，按「測試連線」。</li>
+        </ol>
+        <button type="button" class="tbtn ghost" id="btnCopyGs">複製程式碼（Apps Script）</button>
+      </details>
+
+      <label class="sync-label">Apps Script 網址</label>
+      <input class="sync-input" id="syncUrl" type="url" placeholder="https://script.google.com/macros/s/…/exec" autocomplete="off" autocapitalize="off" spellcheck="false">
+      <label class="sync-label">密碼</label>
+      <div class="sync-pw">
+        <input class="sync-input" id="syncKey" type="password" placeholder="和程式碼第一行相同" autocomplete="off" autocapitalize="off" spellcheck="false">
+        <button type="button" class="pw-toggle" id="btnShowPw">顯示</button>
+      </div>
+      <label class="sync-check"><input type="checkbox" id="syncAuto" checked> 資料有改動時自動上傳</label>
+      <div class="set-actions">
+        <button type="button" class="tbtn ghost" id="btnSyncTest">測試連線</button>
+        <button type="button" class="tbtn" id="btnSyncUp">⇧ 上傳</button>
+        <button type="button" class="tbtn" id="btnSyncDown">⇩ 下載</button>
+      </div>
+      <button type="button" class="link-btn" id="btnSyncOff">清除這部手機的網址和密碼</button>
+      <p class="set-note">• 雲端如果有另一部裝置較新的資料，上傳前會先問你，不會靜靜覆蓋。<br>• 沒有網絡時改的資料會先存在手機，有網絡後自動補上傳。<br>• 密碼只存在這部手機，不會放進匯出的備份檔。</p>
+
+      <div class="set-title">安裝到手機桌面 <span class="sync-state" id="installState"></span></div>
+      <p class="set-note" id="installHelp"></p>
+      <div class="set-actions">
+        <button type="button" class="tbtn" id="btnInstall" hidden>安裝到桌面</button>
+        <button type="button" class="tbtn ghost" id="btnCheckInstall">檢查安裝狀態與圖示</button>
+      </div>
+
+      <div class="set-title">備份</div>
+      <div class="set-actions">
+        <button type="button" class="tbtn" id="btnExport">⇩ 匯出 JSON</button>
+        <button type="button" class="tbtn ghost" id="btnImportTrigger">⇧ 匯入 JSON</button>
+        <input type="file" id="btnImport" class="hidden-file" accept="application/json,.json">
+      </div>
+
+      <div class="set-title">資料</div>
+      <div class="set-actions">
+        <button type="button" class="tbtn danger" id="btnReset">清除本機資料</button>
+      </div>
+      <p class="set-note">只清除這部手機的資料，Google Drive 上的資料不受影響。</p>
+    </div>
+  </div>
+  <div id="dayPanel"></div>
+</main>
+
+<div class="save-note" id="saveNote">已自動儲存於本機</div>
+
+<script type="text/plain" id="gsCode">const PASSWORD = '改成你自己的密碼';   // ← 改這一行
+const FOLDER_NAME = '旅行手帳';          // Drive 資料夾名稱
+const FILE_NAME = '旅行手帳資料.json';
+const BACKUP_FOLDER = '備份';            // 每次覆蓋前，舊版本會存到這裡
+const KEEP_BACKUPS = 20;                 // 最多保留幾份備份
+
+function out_(o) {
+  return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON);
+}
+function folder_() {
+  const it = DriveApp.getFoldersByName(FOLDER_NAME);
+  return it.hasNext() ? it.next() : DriveApp.createFolder(FOLDER_NAME);
+}
+function file_() {
+  const dir = folder_();
+  const it = dir.getFilesByName(FILE_NAME);
+  if (it.hasNext()) return it.next();
+  const old = DriveApp.getRootFolder().getFilesByName(FILE_NAME);   // 舊版放在根目錄的檔案
+  return dir.createFile(FILE_NAME, old.hasNext() ? old.next().getBlob().getDataAsString() : '', 'application/json');
+}
+function read_() {
+  const txt = file_().getBlob().getDataAsString();
+  if (!txt) return null;
+  let o;
+  try { o = JSON.parse(txt); } catch (e) { return null; }
+  if (o && typeof o.rev === 'number' && o.data) return o;
+  if (o && Array.isArray(o.days)) return { rev: 1, savedAt: '', device: '', data: o };   // 舊格式
+  return null;
+}
+function backup_(rawText, rev) {
+  const dir = folder_();
+  const bit = dir.getFoldersByName(BACKUP_FOLDER);
+  const bdir = bit.hasNext() ? bit.next() : dir.createFolder(BACKUP_FOLDER);
+  const stamp = Utilities.formatDate(new Date(), Session.getScriptTimeZone(), 'yyyyMMdd-HHmmss');
+  bdir.createFile('備份_' + stamp + '_v' + rev + '.json', rawText, 'application/json');
+  const list = [];
+  const it = bdir.getFiles();
+  while (it.hasNext()) { const f = it.next(); list.push({ f: f, t: f.getDateCreated().getTime() }); }
+  list.sort(function (a, b) { return b.t - a.t; });
+  list.slice(KEEP_BACKUPS).forEach(function (x) { x.f.setTrashed(true); });
+}
+
+function doGet(e) {
+  const p = e.parameter || {};
+  if (p.key !== PASSWORD) return out_({ ok: false, error: '密碼不正確' });
+  const cur = read_();
+  if (p.action === 'ping') {
+    return out_({ ok: true, hasData: !!cur, rev: cur ? cur.rev : 0, savedAt: cur ? cur.savedAt : '',
+                  folder: folder_().getName(), folderUrl: folder_().getUrl() });
+  }
+  return out_({ ok: true, rev: cur ? cur.rev : 0, savedAt: cur ? cur.savedAt : '', data: cur ? cur.data : null });
+}
+
+function doPost(e) {
+  let body;
+  try { body = JSON.parse(e.postData.contents); } catch (err) { return out_({ ok: false, error: '資料格式錯誤' }); }
+  if (body.key !== PASSWORD) return out_({ ok: false, error: '密碼不正確' });
+  if (!body.data || !Array.isArray(body.data.days)) return out_({ ok: false, error: '資料內容不正確' });
+  const lock = LockService.getScriptLock();
+  lock.waitLock(20000);
+  try {
+    const file = file_();
+    const raw = file.getBlob().getDataAsString();
+    const cur = read_();
+    // 雲端的版本和這部裝置上次同步的版本不同 → 不覆蓋，交回 App 詢問
+    if (cur && !body.force && body.baseRev !== cur.rev) {
+      return out_({ ok: false, conflict: true, rev: cur.rev, savedAt: cur.savedAt });
+    }
+    if (cur) backup_(raw, cur.rev);   // 覆蓋前先留一份舊版本
+    const rev = (cur ? cur.rev : 0) + 1;
+    const savedAt = new Date().toISOString();
+    file.setContent(JSON.stringify({ rev: rev, savedAt: savedAt, device: body.device || '', data: body.data }));
+    return out_({ ok: true, rev: rev, savedAt: savedAt });
+  } finally {
+    lock.releaseLock();
+  }
+}
+</script>
+
+<div id="pdfModal" class="pdf-modal hidden">
+  <div class="pdf-modal-bar">
+    <span id="pdfModalTitle" class="pdf-modal-title"></span>
+    <a id="pdfModalDownload" class="pdf-modal-btn" download>⬇ 下載</a>
+    <button id="pdfModalClose" class="pdf-modal-btn" type="button">✕ 關閉</button>
+  </div>
+  <iframe id="pdfModalFrame" class="pdf-modal-frame" title="PDF 預覽"></iframe>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+const CATS = [
+  {key:'itinerary', label:'行程 / 景點', cls:'c-itinerary'},
+  {key:'transport', label:'交通', cls:'c-transport'},
+  {key:'ticket', label:'門票', cls:'c-ticket'},
+  {key:'restaurant', label:'餐廳', cls:'c-restaurant'},
+  {key:'hotel', label:'酒店', cls:'c-hotel', placeholder:'酒店名稱 / 地址 / 入住退房 / 訂房編號'},
+];
+const WK = ['日','一','二','三','四','五','六'];
+const STORAGE_KEY = 'travel_itinerary_v1';
+
+function uid(){ return 'id' + Math.random().toString(36).slice(2,10) + Date.now().toString(36); }
+
+function openPdf(pdf){
+  try{
+    const dataUrl = pdf.dataUrl;
+    const commaIdx = dataUrl.indexOf(',');
+    const meta = dataUrl.slice(5, commaIdx); // e.g. application/pdf;base64
+    const mime = (meta.split(';')[0]) || 'application/pdf';
+    const b64 = dataUrl.slice(commaIdx+1);
+    const byteChars = atob(b64);
+    const byteNumbers = new Uint8Array(byteChars.length);
+    for(let i=0;i<byteChars.length;i++){ byteNumbers[i] = byteChars.charCodeAt(i); }
+    const blob = new Blob([byteNumbers], {type: mime});
+    const url = URL.createObjectURL(blob);
+    closePdfModal(); // clear any previous one first
+    currentPdfUrl = url;
+    document.getElementById('pdfModalTitle').textContent = pdf.name || 'PDF';
+    const dl = document.getElementById('pdfModalDownload');
+    dl.href = url;
+    dl.setAttribute('download', pdf.name || 'document.pdf');
+    document.getElementById('pdfModalFrame').src = url;
+    document.getElementById('pdfModal').classList.remove('hidden');
+  }catch(e){
+    console.error('openPdf failed', e);
+    alert('無法開啟此 PDF，檔案可能已損毀，請嘗試移除後重新上傳。');
+  }
+}
+
+let currentPdfUrl = null;
+function closePdfModal(){
+  const frame = document.getElementById('pdfModalFrame');
+  if(frame) frame.src = 'about:blank';
+  const modal = document.getElementById('pdfModal');
+  if(modal) modal.classList.add('hidden');
+  if(currentPdfUrl){ URL.revokeObjectURL(currentPdfUrl); currentPdfUrl = null; }
+}
+
+function fmtDate(dt){
+  const y=dt.getFullYear(), m=String(dt.getMonth()+1).padStart(2,'0'), d=String(dt.getDate()).padStart(2,'0');
+  return `${y}-${m}-${d}`;
+}
+function addDaysStr(dateStr, n){
+  if(!dateStr) return '';
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dt = new Date(y, (m||1)-1, d||1);
+  dt.setDate(dt.getDate()+n);
+  return fmtDate(dt);
+}
+function weekdayOf(dateStr){
+  if(!dateStr) return '';
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const dt = new Date(y, (m||1)-1, d||1);
+  return WK[dt.getDay()];
+}
+function todayStr(){ return fmtDate(new Date()); }
+
+/* 第 i 天相對今天的狀態：past（已過）/ today（今天）/ future（未到） */
+function dayState(i){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(trip.startDate||'')) return '';
+  const date = addDaysStr(trip.startDate, i);
+  const t = todayStr();
+  return date < t ? 'past' : (date === t ? 'today' : 'future');
+}
+/* 今天對應第幾天（index）；未開始 → D01，已結束 → 最後一天 */
+function dayIndexForToday(){
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(trip.startDate||'')) return 0;
+  const [y,m,d] = trip.startDate.split('-').map(Number);
+  const start = new Date(y, m-1, d);
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const diff = Math.round((today - start) / 86400000);
+  return Math.max(0, Math.min(trip.days.length-1, diff));
+}
+
+/* 欄目排列次序（每一天各自獨立，可拖動調換） */
+function orderedCats(dayIdx){
+  const day = trip.days[dayIdx];
+  const order = (day && Array.isArray(day.catOrder)) ? day.catOrder : [];
+  const out = [];
+  order.forEach(k=>{ const c = CATS.find(x=>x.key===k); if(c && !out.includes(c)) out.push(c); });
+  CATS.forEach(c=>{ if(!out.includes(c)) out.push(c); });
+  return out;
+}
+
+function emptyItems(){
+  const o={};
+  CATS.forEach(c=> o[c.key]=[]);
+  return o;
+}
+function newDay(city){
+  return { city: city||'', note:'', catOrder: CATS.map(c=>c.key), items: emptyItems() };
+}
+function defaultTrip(){
+  return {
+    title:'', countries:[], cities:[], startDate: todayStr(),
+    days:[ newDay('') ]
+  };
+}
+
+let trip = load() || defaultTrip();
+let activeDay = dayIndexForToday();   // 開啟時自動對上今天
+let saveTimer = null;
+let drag = null;                      // 拖動排序中的狀態
+
+function migrateTrip(t){
+  if(!Array.isArray(t.countries)) t.countries = t.country ? [t.country] : [];
+  if(!Array.isArray(t.cities)) t.cities = t.city ? [t.city] : [];
+  t.days.forEach(d=>{
+    if(!d.items) d.items = emptyItems();
+    if(!Array.isArray(d.catOrder)) d.catOrder = Array.isArray(t.catOrder) ? t.catOrder.slice() : CATS.map(c=>c.key);
+    CATS.forEach(c=>{ if(!d.items[c.key]) d.items[c.key]=[]; });
+    Object.keys(d.items).forEach(key=>{
+      d.items[key].forEach(it=>{
+        if(typeof it.link === 'string'){ it.links = it.link ? [it.link] : []; }
+        if(!Array.isArray(it.links)) it.links = [];
+        if(it.pdf && !Array.isArray(it.pdfs)){ it.pdfs = [it.pdf]; }
+        if(!Array.isArray(it.pdfs)) it.pdfs = [];
+      });
+    });
+  });
+  return t;
+}
+
+function load(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw) return null;
+    const t = JSON.parse(raw);
+    if(!t.days) return null;
+    return migrateTrip(t);
+  }catch(e){ console.warn('load failed', e); return null; }
+}
+
+function persistLocal(){
+  const note = document.getElementById('saveNote');
+  try{
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(trip));
+    note.textContent = '已自動儲存於本機 · ' + new Date().toLocaleTimeString('zh-Hant-HK',{hour:'2-digit',minute:'2-digit'});
+    return true;
+  }catch(e){
+    note.textContent = '⚠ 儲存失敗（可能是 PDF 檔案太大，超出本機儲存空間）';
+    return false;
+  }
+}
+
+function scheduleSave(){
+  clearTimeout(saveTimer);
+  trip.updatedAt = Date.now();           // 供雲端同步比較新舊
+  document.getElementById('saveNote').textContent = '儲存中…';
+  saveTimer = setTimeout(()=>{
+    persistLocal();
+    scheduleCloudSync();
+  }, 350);
+}
+
+/* ================= Google Drive 同步（經 Apps Script 網頁應用程式） ================= */
+const SYNC_KEY = 'travel_sync_v2';
+const SYNC_DEFAULT = {url:'', key:'', auto:true, baseRev:0, syncedAt:0, device:''};
+let sync = (function(){
+  let o = {};
+  try{ o = JSON.parse(localStorage.getItem(SYNC_KEY) || localStorage.getItem('travel_sync_v1') || '{}') || {}; }catch(e){}
+  const c = Object.assign({}, SYNC_DEFAULT, {
+    url:o.url||'', key:o.key||'', auto:o.auto!==false,
+    baseRev:Number(o.baseRev)||0, syncedAt:Number(o.syncedAt)||0, device:o.device||''
+  });
+  if(!c.device) c.device = 'd' + Math.random().toString(36).slice(2,8);
+  return c;
+})();
+let syncBusy = false, syncPaused = false, syncRetry = false, syncTimer = null;
+
+function saveSyncCfg(){ try{ localStorage.setItem(SYNC_KEY, JSON.stringify(sync)); }catch(e){} }
+function syncEnabled(){ return !!(sync.url && sync.key); }
+function isDirty(){ return (trip.updatedAt||0) > (sync.syncedAt||0); }
+function hhmm(){ return new Date().toLocaleTimeString('zh-Hant-HK',{hour:'2-digit',minute:'2-digit'}); }
+function fmtTime(iso){
+  if(!iso) return '不明時間';
+  const d = new Date(iso);
+  return isNaN(d) ? '不明時間' : d.toLocaleString('zh-Hant-HK',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
+}
+function setSyncState(text, cls){
+  const el = document.getElementById('syncState');
+  if(!el) return;
+  el.textContent = text; el.className = 'sync-state ' + (cls||'');
+}
+
+/* 簡單的選擇視窗（取代 confirm，可有三個選項） */
+function askChoice(title, msg, buttons){
+  return new Promise(resolve=>{
+    const back = document.createElement('div');
+    back.className = 'dlg-back';
+    back.innerHTML = '<div class="dlg" role="dialog" aria-modal="true"><h4></h4><p></p><div class="dlg-btns"></div></div>';
+    back.querySelector('h4').textContent = title;
+    back.querySelector('p').textContent = msg;
+    const box = back.querySelector('.dlg-btns');
+    const done = v=>{ back.remove(); resolve(v); };
+    buttons.forEach(b=>{
+      const btn = document.createElement('button');
+      btn.type = 'button'; btn.textContent = b.label; btn.dataset.value = b.value;
+      if(b.cls) btn.className = b.cls;
+      btn.addEventListener('click', ()=>done(b.value));
+      box.appendChild(btn);
+    });
+    back.addEventListener('click', e=>{ if(e.target===back) done('cancel'); });
+    document.body.appendChild(back);
+  });
+}
+
+/* 從設定欄位讀取並檢查網址／密碼 */
+function readCfgFromUI(showAlert){
+  const url = document.getElementById('syncUrl').value.trim();
+  const key = document.getElementById('syncKey').value;
+  const bad = m=>{ if(showAlert) alert(m); return false; };
+  if(!url || !key) return bad('請先填入 Apps Script 網址和密碼。');
+  if(!/^https:\/\/script\.google\.com\//.test(url)) return bad('網址要是 https://script.google.com/ 開頭的「網頁應用程式網址」。');
+  if(!/\/exec$/.test(url)) return bad('網址要以 /exec 結尾。若結尾是 /dev 或 /edit，那是測試／編輯網址，請改用「部署」後得到的網址。');
+  if(url !== sync.url || key !== sync.key){
+    if(sync.url && url !== sync.url){ sync.baseRev = 0; sync.syncedAt = 0; }   // 換了另一個雲端，版本記錄要重來
+    sync.url = url; sync.key = key; saveSyncCfg();
+  }
+  return true;
+}
+
+async function callCloud(method, params, body){
+  let r;
+  try{
+    if(method === 'POST'){
+      r = await fetch(sync.url, {
+        method:'POST',
+        headers:{'Content-Type':'text/plain;charset=utf-8'},   // text/plain 可避免瀏覽器預檢請求
+        body: JSON.stringify(Object.assign({key:sync.key}, body))
+      });
+    } else {
+      let u = sync.url + (sync.url.includes('?') ? '&' : '?') + 'key=' + encodeURIComponent(sync.key);
+      for(const k in (params||{})) u += '&' + k + '=' + encodeURIComponent(params[k]);
+      r = await fetch(u);
+    }
+  }catch(e){
+    const err = new Error(navigator.onLine === false ? '目前離線' : '連不到 Google'); err.net = true; throw err;
+  }
+  try{ return await r.json(); }
+  catch(e){ const err = new Error('Google 回傳的不是資料（請檢查網址，以及部署的「存取權」是否為「所有人」）'); err.cfg = true; throw err; }
+}
+
+function handleSyncError(e, manual){
+  if(e.net){ syncRetry = true; }
+  if(e.net && navigator.onLine === false){
+    setSyncState('離線 · 已存在手機，連線後自動上傳','busy');
+    if(manual) alert('目前離線。資料已存在這部手機，連線後會自動上傳（需開啟「資料有改動時自動上傳」）。');
+    return;
+  }
+  const msg = e.message || '失敗';
+  setSyncState('失敗：' + msg, 'err');
+  if(manual) alert('失敗：' + msg + (e.net ? '\n\n請檢查：\n1. 網址要以 /exec 結尾\n2. 部署時「誰可以存取」要選「所有人」\n3. 改過程式碼後要「管理部署作業」→ 編輯 → 新版本 → 部署' : ''));
+}
+
+async function syncTest(){
+  if(!readCfgFromUI(true) || syncBusy) return;
+  syncBusy = true; setSyncState('測試中…','busy');
+  try{
+    const j = await callCloud('GET', {action:'ping'});
+    if(!j.ok) throw new Error(j.error || '失敗');
+    setSyncState('連線成功 · ' + hhmm(), 'ok');
+    alert('連線成功 ✓\n\n' + (j.hasData ? '雲端已有資料（最後更新：' + fmtTime(j.savedAt) + '）' : '雲端還沒有資料') + '\nDrive 資料夾：' + (j.folder || '旅行手帳'));
+  }catch(e){ handleSyncError(e, true); }
+  finally{ syncBusy = false; }
+}
+
+async function syncUpload(manual, force){
+  if(manual && !readCfgFromUI(true)) return;
+  if(!syncEnabled() || syncBusy) return;
+  if(manual) syncPaused = false;
+  syncBusy = true; setSyncState('上傳中…','busy');
+  let res, snap;
+  try{
+    if(navigator.onLine === false){ const er = new Error('目前離線'); er.net = true; throw er; }
+    snap = JSON.parse(JSON.stringify(trip));
+    if(!snap.updatedAt) snap.updatedAt = Date.now();
+    res = await callCloud('POST', null, {baseRev: force ? null : sync.baseRev, force: !!force, device: sync.device, data: snap});
+  }catch(e){ syncBusy = false; handleSyncError(e, manual); return; }
+  syncBusy = false;
+
+  if(res.ok){
+    sync.baseRev = res.rev; sync.syncedAt = snap.updatedAt; saveSyncCfg();
+    syncPaused = false; syncRetry = false;
+    setSyncState('已上傳 · ' + hhmm(), 'ok');
+    if(manual) alert('已上傳 ✓');
+    return;
+  }
+  if(res.conflict){
+    if(!manual){
+      syncPaused = true;
+      setSyncState('⚠ 雲端有另一部裝置的資料，未自動上傳。請到設定按「上傳」或「下載」','err');
+      return;
+    }
+    const c = await askChoice('雲端有另一部裝置的資料',
+      '雲端資料最後更新：' + fmtTime(res.savedAt) + '\n\n這部手機的資料和雲端不同步。直接上傳會覆蓋雲端的資料（舊版本會自動備份在 Drive 的「備份」資料夾）。',
+      [{label:'下載雲端資料到這部手機', value:'down'},
+       {label:'仍然上傳，覆蓋雲端', value:'force', cls:'danger'},
+       {label:'取消', value:'cancel', cls:'plain'}]);
+    if(c === 'force') return syncUpload(true, true);
+    if(c === 'down') return syncDownload(true);
+    setSyncState('已取消上傳');
+    return;
+  }
+  setSyncState('上傳失敗：' + (res.error || '未知錯誤'), 'err');
+  if(manual) alert('上傳失敗：' + (res.error || '未知錯誤'));
+}
+
+async function syncDownload(manual){
+  if(manual && !readCfgFromUI(true)) return;
+  if(!syncEnabled() || syncBusy) return;
+  syncBusy = true; setSyncState('下載中…','busy');
+  let j;
+  try{ j = await callCloud('GET', {action:'get'}); }
+  catch(e){ syncBusy = false; handleSyncError(e, true); return; }
+  syncBusy = false;
+  if(!j.ok){ setSyncState('下載失敗：' + (j.error || '未知錯誤'), 'err'); alert('下載失敗：' + (j.error || '未知錯誤')); return; }
+  if(!j.data || !Array.isArray(j.data.days)){ setSyncState('雲端還沒有資料'); alert('雲端還沒有資料可以下載。'); return; }
+  if(isDirty() && !confirm('這部手機有尚未上傳的修改，下載會覆蓋它們。\n（建議先到「備份」按「匯出 JSON」）\n\n要用雲端資料覆蓋這部手機嗎？')){
+    setSyncState('已取消下載'); return;
+  }
+  trip = migrateTrip(j.data);
+  activeDay = dayIndexForToday();
+  persistLocal();
+  sync.baseRev = j.rev; sync.syncedAt = trip.updatedAt || 0; saveSyncCfg();
+  syncPaused = false; syncRetry = false;
+  renderHeader(); renderTabs(true); renderPanel();
+  setSyncState('已下載 · ' + hhmm(), 'ok');
+}
+
+/* 自動上傳：資料有改動 2.5 秒後；離線時先存手機，上線後補上傳 */
+function scheduleCloudSync(){
+  if(!syncEnabled() || !sync.auto || syncPaused) return;
+  clearTimeout(syncTimer);
+  if(navigator.onLine === false){ setSyncState('離線 · 已存在手機，連線後自動上傳','busy'); return; }
+  syncTimer = setTimeout(()=>syncUpload(false, false), 2500);
+}
+function tryAutoUpload(){
+  if(syncEnabled() && sync.auto && !syncPaused && !syncBusy && isDirty() && navigator.onLine !== false) syncUpload(false, false);
+}
+window.addEventListener('online', tryAutoUpload);
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState === 'visible') tryAutoUpload(); });
+setInterval(()=>{ if(syncRetry) tryAutoUpload(); }, 60000);   // 上次因網絡失敗，每分鐘再試
+
+function ensureDayCount(n){
+  n = Math.max(1, Math.min(60, n||1));
+  const cur = trip.days.length;
+  if(n > cur){
+    const defCity = (trip.cities && trip.cities[0]) || '';
+    for(let i=cur;i<n;i++) trip.days.push(newDay(defCity));
+  } else if(n < cur){
+    trip.days = trip.days.slice(0, n);
+    if(activeDay > n-1) activeDay = n-1;
+  }
+}
+
+/* ---------- tag editor (國家 / 城市 多選) ---------- */
+function renderTagEditor(containerId, arr, placeholder, onChangeExtra){
+  const el = document.getElementById(containerId);
+  el.innerHTML = arr.map((t,idx)=>
+    `<span class="tag-chip">${escapeHtml(t)}<button type="button" data-idx="${idx}">✕</button></span>`
+  ).join('') + `<input type="text" placeholder="${escapeAttr(placeholder)}">`;
+
+  function commit(input){
+    const v = input.value.trim().replace(/,$/,'');
+    if(v){
+      arr.push(v);
+      scheduleSave();
+      renderTagEditor(containerId, arr, placeholder, onChangeExtra);
+      if(onChangeExtra) onChangeExtra();
+    }
+  }
+  el.querySelectorAll('button[data-idx]').forEach(b=>{
+    b.addEventListener('click', ()=>{
+      arr.splice(Number(b.dataset.idx),1);
+      scheduleSave();
+      renderTagEditor(containerId, arr, placeholder, onChangeExtra);
+      if(onChangeExtra) onChangeExtra();
+    });
+  });
+  const input = el.querySelector('input');
+  input.addEventListener('keydown', (e)=>{
+    if(e.key==='Enter' || e.key===','){ e.preventDefault(); commit(input); }
+  });
+  input.addEventListener('blur', ()=> commit(input));
+}
+
+/* ---------- render header ---------- */
+function renderHeader(){
+  document.getElementById('tripTitle').value = trip.title||'';
+  renderTagEditor('cityTags', trip.cities, '輸入城市後按 ⏎ 新增', ()=>{ renderPanel(); });
+  document.getElementById('tripStart').value = trip.startDate||'';
+  document.getElementById('tripDaysNum').value = trip.days.length;
+  document.getElementById('daysCountLabel').textContent = `共 ${trip.days.length} 天`;
+}
+
+/* ---------- render tabs ---------- */
+function renderTabs(center){
+  const wrap = document.getElementById('dayTabs');
+  const keepLeft = wrap.scrollLeft;
+  wrap.innerHTML = trip.days.map((d,i)=>{
+    const date = addDaysStr(trip.startDate, i);
+    const wk = weekdayOf(date);
+    const st = dayState(i);
+    const mark = st==='past' ? '<span class="dmark">✓</span>' : '';
+    const badge = st==='today' ? '<span class="dbadge">今天</span>' : '';
+    return `<div class="day-tab ${i===activeDay?'active':''} ${st}" data-idx="${i}">${badge}
+      <div class="dnum">D${String(i+1).padStart(2,'0')}${mark}</div>
+      <div class="ddate">${date||'--'}</div>
+      <div class="dwk">星期${wk||'-'}</div>
+    </div>`;
+  }).join('');
+  wrap.querySelectorAll('.day-tab').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      if(Date.now() - lastTabDragEnd < 500) return;   // 剛拖完，不當作點擊
+      activeDay = Number(el.dataset.idx);
+      renderTabs();
+      renderPanel();
+    });
+  });
+  if(center === true){
+    // 將目前選中的日子捲到畫面中間
+    const el = wrap.querySelector('.day-tab.active');
+    if(el) wrap.scrollLeft = el.offsetLeft - (wrap.clientWidth - el.offsetWidth)/2;
+  } else {
+    wrap.scrollLeft = keepLeft;   // 重畫後保持原本捲動位置
+  }
+}
+
+/* ---------- 長按日期卡片左右拖動，調換行程（日期維持順序，只是內容換位） ---------- */
+let tabDrag = null, lastTabDragEnd = 0;
+(function(){
+  const wrap = document.getElementById('dayTabs');
+  // 拖動開始後阻止頁面／捲動跟著移動（iOS 需要非 passive 的 touchmove）
+  document.addEventListener('touchmove', e=>{ if(tabDrag) e.preventDefault(); }, {passive:false});
+
+  wrap.addEventListener('pointerdown', e=>{
+    const tab = e.target.closest('.day-tab');
+    if(!tab || tabDrag) return;
+    if(e.pointerType==='mouse' && e.button!==0) return;
+    const sx = e.clientX, sy = e.clientY, pid = e.pointerId;
+    let lastX = sx, holdTimer = null;
+
+    const stopWatching = ()=>{
+      clearTimeout(holdTimer);
+      document.removeEventListener('pointermove', preMove);
+      document.removeEventListener('pointerup', preEnd);
+      document.removeEventListener('pointercancel', preEnd);
+    };
+    const preMove = ev=>{
+      if(ev.pointerId!==pid) return;
+      lastX = ev.clientX;
+      if(Math.abs(ev.clientX-sx)>8 || Math.abs(ev.clientY-sy)>8) stopWatching();   // 先移動＝一般捲動
+    };
+    const preEnd = ev=>{ if(ev.pointerId===pid) stopWatching(); };
+    document.addEventListener('pointermove', preMove);
+    document.addEventListener('pointerup', preEnd);
+    document.addEventListener('pointercancel', preEnd);
+
+    holdTimer = setTimeout(()=>{
+      stopWatching();
+      beginTabDrag(tab, sx, lastX, pid);
+    }, 420);
+  });
+
+  function beginTabDrag(tab, startX, curX, pid){
+    const tabs = Array.from(wrap.querySelectorAll('.day-tab'));
+    const from = tabs.indexOf(tab);
+    if(from < 0 || tabs.length < 2) return;
+    const lefts = tabs.map(t=>t.offsetLeft), widths = tabs.map(t=>t.offsetWidth);
+    const gap = tabs.length>1 ? (lefts[1]-lefts[0]-widths[0]) : 10;
+    tabDrag = { tabs, from, to:from, lefts, widths, gap, startX, lastX:curX, scrollStart:wrap.scrollLeft, pid, raf:0 };
+    tab.classList.add('dragging');
+    wrap.classList.add('tab-sorting');
+    if(navigator.vibrate) try{ navigator.vibrate(10); }catch(_){}
+
+    const update = ()=>{
+      const d = tabDrag; if(!d) return;
+      const dx = (d.lastX - d.startX) + (wrap.scrollLeft - d.scrollStart);
+      d.tabs[d.from].style.transform = `translateX(${dx}px)`;
+      const center = d.lefts[d.from] + d.widths[d.from]/2 + dx;
+      let to = d.from;
+      for(let i=0;i<d.tabs.length;i++){
+        if(i===d.from) continue;
+        const mid = d.lefts[i] + d.widths[i]/2;
+        if(i<d.from && center < mid) to = Math.min(to, i);
+        if(i>d.from && center > mid) to = Math.max(to, i);
+      }
+      d.to = to;
+      const step = d.widths[d.from] + d.gap;
+      d.tabs.forEach((t,i)=>{
+        if(i===d.from) return;
+        let shift = 0;
+        if(d.from < d.to && i>d.from && i<=d.to) shift = -step;
+        if(d.from > d.to && i<d.from && i>=d.to) shift = step;
+        t.style.transform = shift ? `translateX(${shift}px)` : '';
+      });
+      // 接近左右邊緣時自動捲動
+      const r = wrap.getBoundingClientRect();
+      if(d.lastX < r.left + 50) wrap.scrollLeft -= 10;
+      else if(d.lastX > r.right - 50) wrap.scrollLeft += 10;
+      d.raf = requestAnimationFrame(update);
+    };
+    tabDrag.raf = requestAnimationFrame(update);
+
+    const move = ev=>{ if(tabDrag && ev.pointerId===tabDrag.pid) tabDrag.lastX = ev.clientX; };
+    const end = (ev, cancel)=>{
+      if(!tabDrag || ev.pointerId!==tabDrag.pid) return;
+      cancelAnimationFrame(tabDrag.raf);
+      const d = tabDrag; tabDrag = null;
+      document.removeEventListener('pointermove', move);
+      document.removeEventListener('pointerup', up);
+      document.removeEventListener('pointercancel', cn);
+      wrap.classList.remove('tab-sorting');
+      lastTabDragEnd = Date.now();
+      if(!cancel && d.to !== d.from){
+        const [moved] = trip.days.splice(d.from,1);
+        trip.days.splice(d.to,0,moved);
+        activeDay = d.to;                 // 選中狀態跟著搬過去的那一天
+        scheduleSave();
+        renderTabs(); renderPanel();
+      } else {
+        renderTabs();
+      }
+    };
+    const up = ev=>end(ev,false), cn = ev=>end(ev,true);
+    document.addEventListener('pointermove', move);
+    document.addEventListener('pointerup', up);
+    document.addEventListener('pointercancel', cn);
+  }
+})();
+
+/* ---------- render day panel ---------- */
+function itemCardHTML(dayIdx, catKey, item){
+  const catDef = CATS.find(c=>c.key===catKey) || {};
+  const notePh = catDef.placeholder || '備註';
+  const links = item.links||[];
+  const linkChips = links.map((l,idx)=>
+    `<div class="chip">🔗 <a href="${escapeAttr(l)}" target="_blank" rel="noopener">${escapeHtml(l)}</a><button data-act="rmlink" data-day="${dayIdx}" data-cat="${catKey}" data-id="${item.id}" data-idx="${idx}">✕</button></div>`
+  ).join('');
+  return `
+  <div class="item-card">
+    <span class="punch"></span>
+    <div class="item-top-min">
+      <span class="drag-handle" data-act="drag" data-day="${dayIdx}" data-cat="${catKey}" data-id="${item.id}" title="按住上下拖動，調換位置">⠿ 按住拖動</span>
+      <button class="rm-item" data-act="rmitem" data-day="${dayIdx}" data-cat="${catKey}" data-id="${item.id}" title="刪除整項">✕ 刪除</button>
+    </div>
+    <div class="item-body">
+      <textarea class="autosize" placeholder="${escapeAttr(notePh)}" data-field="note" data-day="${dayIdx}" data-cat="${catKey}" data-id="${item.id}">${escapeHtml(item.note||'')}</textarea>
+      ${linkChips ? `<div class="link-row">${linkChips}</div>` : ''}
+      <div class="link-row">
+        <input type="url" class="link-add-input" placeholder="貼上連結網址後按 ⏎ 新增" data-act="linkinput" data-day="${dayIdx}" data-cat="${catKey}" data-id="${item.id}">
+        <button type="button" class="pdf-label" data-act="addlink" data-day="${dayIdx}" data-cat="${catKey}" data-id="${item.id}">＋ 連結</button>
+      </div>
+    </div>
+  </div>`;
+}
+
+function catSectionHTML(dayIdx, cat, items){
+  return `
+  <div class="cat-section ${cat.cls}" data-catkey="${cat.key}">
+    <div class="cat-head">
+      <span class="cat-drag" data-act="catdrag" data-cat="${cat.key}" title="按住上下拖動，調換欄目次序">⠿</span>
+      <span class="cat-dot"></span>
+      <span class="cat-title">${cat.label}</span>
+      <span class="cat-count">${items.length} 項</span>
+    </div>
+    <div class="item-list">${items.map(it=>itemCardHTML(dayIdx, cat.key, it)).join('')}</div>
+    <button class="add-item-btn" data-act="additem" data-day="${dayIdx}" data-cat="${cat.key}">＋ 新增${cat.label}項目</button>
+  </div>`;
+}
+
+function cityOptionsHTML(current){
+  let cities = (trip.cities||[]).slice();
+  if(current && !cities.includes(current)) cities.push(current);
+  const opts = cities.map(c=>`<option value="${escapeAttr(c)}" ${c===current?'selected':''}>${escapeHtml(c)}</option>`).join('');
+  return `<option value="" ${current?'':'selected'}>未設定</option>${opts}`;
+}
+
+function renderPanel(){
+  const panel = document.getElementById('dayPanel');
+  if(trip.days.length===0){ panel.innerHTML = '<div class="empty-days">尚未有任何天數，請於上方新增</div>'; return; }
+  const d = trip.days[activeDay];
+  const date = addDaysStr(trip.startDate, activeDay);
+  const wk = weekdayOf(date);
+  const st = dayState(activeDay);
+  panel.className = st ? ('day-' + st) : '';
+  const stampLabel = st==='past' ? '已過' : (st==='today' ? '今天' : 'ENTRY');
+  panel.innerHTML = `
+    <div class="day-head">
+      <div class="stamp"><b>D${String(activeDay+1).padStart(2,'0')}</b><span>${stampLabel}</span></div>
+      <div class="day-head-text">
+        <div class="dh-date">${date||'尚未設定日期'}</div>
+        <div class="dh-wk">星期${wk||'-'} ${d.city? '· '+escapeHtml(d.city):''}</div>
+      </div>
+      ${trip.days.length>1 ? `<button class="del-day" data-act="rmday" data-day="${activeDay}">刪除此日</button>` : ''}
+    </div>
+    <div class="row2">
+      <div class="mini-field"><label>本日城市</label><select data-field="city" data-day="${activeDay}">${cityOptionsHTML(d.city)}</select></div>
+      <div class="mini-field"><label>備註</label><textarea class="autosize" placeholder="今日重點提醒" data-field="note" data-day="${activeDay}">${escapeHtml(d.note||'')}</textarea></div>
+    </div>
+    ${orderedCats(activeDay).map(c=>catSectionHTML(activeDay, c, d.items[c.key])).join('')}
+  `;
+  bindPanelEvents(panel);
+  panel.querySelectorAll('textarea.autosize').forEach(autoResize);
+}
+
+function escapeHtml(s){ return String(s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
+function escapeAttr(s){ return escapeHtml(s); }
+
+/* ---------- event binding within panel ---------- */
+function autoResize(el){
+  el.style.height = 'auto';
+  el.style.height = el.scrollHeight + 'px';
+}
+
+function bindPanelEvents(panel){
+  panel.querySelectorAll('input[data-field], textarea[data-field], select[data-field]').forEach(el=>{
+    const handler = ()=>{
+      const dayIdx = Number(el.dataset.day);
+      const field = el.dataset.field;
+      const cat = el.dataset.cat;
+      const id = el.dataset.id;
+      if(el.tagName==='TEXTAREA') autoResize(el);
+      if(cat && id){
+        const arr = trip.days[dayIdx].items[cat];
+        const item = arr.find(x=>x.id===id);
+        if(item) item[field] = el.value;
+      } else {
+        trip.days[dayIdx][field] = el.value;
+      }
+      scheduleSave();
+      if(field==='city'){
+        const dh = panel.querySelector('.dh-wk');
+        if(dh && dayIdx===activeDay){
+          const date = addDaysStr(trip.startDate, dayIdx);
+          dh.textContent = `星期${weekdayOf(date)||'-'} ${el.value? '· '+el.value:''}`;
+        }
+      }
+    };
+    el.addEventListener('input', handler);
+    if(el.tagName==='SELECT') el.addEventListener('change', handler);
+  });
+
+  /* ---- 按住欄目標題的 ⠿ 上下拖動，調換欄目次序（行程／交通／門票／餐廳／酒店） ---- */
+  panel.querySelectorAll('[data-act="catdrag"]').forEach(handle=>{
+    handle.addEventListener('pointerdown', (e)=>{
+      if(drag) return;
+      if(e.pointerType==='mouse' && e.button!==0) return;
+      e.preventDefault();
+      const sec = handle.closest('.cat-section');
+      const parent = sec.parentElement;
+      const secs = Array.from(parent.querySelectorAll(':scope > .cat-section'));
+      const from = secs.indexOf(sec);
+      panel.classList.add('sorting-cats');   // 收起內容，只剩標題方便拖動
+      document.body.classList.add('is-sorting');
+      const rects = secs.map(c=>c.getBoundingClientRect());
+      const gap = parseFloat(getComputedStyle(sec).marginTop) || 14;
+      const offset0 = e.clientY - (rects[from].top + rects[from].height/2);
+      drag = { cards:secs, from, to:from, rects, gap, offset0, card:sec,
+               startY:e.clientY, scrollStart:window.scrollY, lastY:e.clientY, pointerId:e.pointerId, raf:0 };
+      try{ handle.setPointerCapture(e.pointerId); }catch(_){}
+      sec.classList.add('dragging');
+      if(navigator.vibrate) try{ navigator.vibrate(8); }catch(_){}
+
+      const update = ()=>{
+        if(!drag) return;
+        const dy = (drag.lastY - drag.startY) + (window.scrollY - drag.scrollStart) + drag.offset0;
+        drag.card.style.transform = `translateY(${dy}px)`;
+        const center = drag.rects[drag.from].top + drag.rects[drag.from].height/2 + dy;
+        let to = drag.from;
+        for(let i=0;i<drag.cards.length;i++){
+          if(i===drag.from) continue;
+          const mid = drag.rects[i].top + drag.rects[i].height/2;
+          if(i<drag.from && center < mid) to = Math.min(to, i);
+          if(i>drag.from && center > mid) to = Math.max(to, i);
+        }
+        drag.to = to;
+        const h = drag.rects[drag.from].height + drag.gap;
+        drag.cards.forEach((c,i)=>{
+          if(i===drag.from) return;
+          let shift = 0;
+          if(drag.from < drag.to && i>drag.from && i<=drag.to) shift = -h;
+          if(drag.from > drag.to && i<drag.from && i>=drag.to) shift = h;
+          c.style.transform = shift ? `translateY(${shift}px)` : '';
+        });
+        const vh = window.innerHeight, y = drag.lastY;
+        if(y < 90) window.scrollBy(0,-12);
+        else if(y > vh-90) window.scrollBy(0,12);
+        drag.raf = requestAnimationFrame(update);
+      };
+      drag.raf = requestAnimationFrame(update);
+
+      const move = (ev)=>{ if(drag && ev.pointerId===drag.pointerId) drag.lastY = ev.clientY; };
+      const finish = (ev, cancel)=>{
+        if(!drag || ev.pointerId!==drag.pointerId) return;
+        cancelAnimationFrame(drag.raf);
+        const d = drag; drag = null;
+        handle.removeEventListener('pointermove', move);
+        handle.removeEventListener('pointerup', up);
+        handle.removeEventListener('pointercancel', cancelFn);
+        document.body.classList.remove('is-sorting');
+        if(!cancel && d.to !== d.from){
+          const keys = orderedCats(activeDay).map(c=>c.key);
+          const [moved] = keys.splice(d.from,1);
+          keys.splice(d.to,0,moved);
+          trip.days[activeDay].catOrder = keys;
+          scheduleSave();
+        }
+        panel.classList.remove('sorting-cats');
+        renderPanel();
+      };
+      const up = (ev)=>finish(ev,false);
+      const cancelFn = (ev)=>finish(ev,true);
+      handle.addEventListener('pointermove', move);
+      handle.addEventListener('pointerup', up);
+      handle.addEventListener('pointercancel', cancelFn);
+    });
+  });
+
+  /* ---- 按住 ⠿ 上下拖動，調換同一欄目內的項目位置 ---- */
+  panel.querySelectorAll('[data-act="drag"]').forEach(handle=>{
+    handle.addEventListener('pointerdown', (e)=>{
+      if(drag) return;
+      if(e.pointerType==='mouse' && e.button!==0) return;
+      e.preventDefault();
+      const card = handle.closest('.item-card');
+      const list = card.parentElement;
+      const cards = Array.from(list.children);
+      const from = cards.indexOf(card);
+      if(cards.length < 2) return;
+      const rects = cards.map(c=>c.getBoundingClientRect());
+      drag = {
+        dayIdx:Number(handle.dataset.day), cat:handle.dataset.cat,
+        card, list, cards, from, to:from, rects,
+        startY:e.clientY, scrollStart:window.scrollY, pointerId:e.pointerId, lastY:e.clientY, raf:0
+      };
+      try{ handle.setPointerCapture(e.pointerId); }catch(_){}
+      card.classList.add('dragging');
+      list.classList.add('sorting');
+      document.body.classList.add('is-sorting');
+      if(navigator.vibrate) try{ navigator.vibrate(8); }catch(_){}
+
+      const update = ()=>{
+        if(!drag) return;
+        const dy = (drag.lastY - drag.startY) + (window.scrollY - drag.scrollStart);
+        drag.card.style.transform = `translateY(${dy}px)`;
+        const myTop = drag.rects[drag.from].top + dy;
+        const center = myTop + drag.rects[drag.from].height/2;
+        // 以其他卡片「原本位置」的中線決定插入點
+        let to = drag.from;
+        for(let i=0;i<drag.cards.length;i++){
+          if(i===drag.from) continue;
+          const mid = drag.rects[i].top + drag.rects[i].height/2;
+          if(i<drag.from && center < mid) { to = Math.min(to, i); }
+          if(i>drag.from && center > mid) { to = Math.max(to, i); }
+        }
+        drag.to = to;
+        const h = drag.rects[drag.from].height + 10;
+        drag.cards.forEach((c,i)=>{
+          if(i===drag.from) return;
+          let shift = 0;
+          if(drag.from < drag.to && i>drag.from && i<=drag.to) shift = -h;
+          if(drag.from > drag.to && i<drag.from && i>=drag.to) shift = h;
+          c.style.transform = shift ? `translateY(${shift}px)` : '';
+        });
+        // 接近螢幕上下邊緣時自動捲動
+        const vh = window.innerHeight, y = drag.lastY;
+        if(y < 90) window.scrollBy(0,-12);
+        else if(y > vh-90) window.scrollBy(0,12);
+        drag.raf = requestAnimationFrame(update);
+      };
+      drag.raf = requestAnimationFrame(update);
+
+      const move = (ev)=>{ if(drag && ev.pointerId===drag.pointerId) drag.lastY = ev.clientY; };
+      const finish = (ev, cancel)=>{
+        if(!drag || ev.pointerId!==drag.pointerId) return;
+        cancelAnimationFrame(drag.raf);
+        const d = drag; drag = null;
+        handle.removeEventListener('pointermove', move);
+        handle.removeEventListener('pointerup', up);
+        handle.removeEventListener('pointercancel', cancelFn);
+        document.body.classList.remove('is-sorting');
+        if(!cancel && d.to !== d.from){
+          const arr = trip.days[d.dayIdx].items[d.cat];
+          const [moved] = arr.splice(d.from,1);
+          arr.splice(d.to,0,moved);
+          scheduleSave();
+        }
+        renderPanel();
+      };
+      const up = (ev)=>finish(ev,false);
+      const cancelFn = (ev)=>finish(ev,true);
+      handle.addEventListener('pointermove', move);
+      handle.addEventListener('pointerup', up);
+      handle.addEventListener('pointercancel', cancelFn);
+    });
+  });
+
+  panel.querySelectorAll('[data-act="additem"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const dayIdx = Number(btn.dataset.day);
+      const cat = btn.dataset.cat;
+      trip.days[dayIdx].items[cat].push({id:uid(), time:'', title:'', note:'', links:[], pdfs:[]});
+      scheduleSave();
+      renderPanel();
+    });
+  });
+
+  panel.querySelectorAll('[data-act="rmitem"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const dayIdx = Number(btn.dataset.day), cat = btn.dataset.cat, id = btn.dataset.id;
+      trip.days[dayIdx].items[cat] = trip.days[dayIdx].items[cat].filter(x=>x.id!==id);
+      scheduleSave();
+      renderPanel();
+    });
+  });
+
+  function findItem(dayIdx, cat, id){
+    return trip.days[dayIdx].items[cat].find(x=>x.id===id);
+  }
+
+  panel.querySelectorAll('[data-act="clearfield"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const dayIdx = Number(btn.dataset.day), cat = btn.dataset.cat, id = btn.dataset.id, field = btn.dataset.field;
+      const item = findItem(dayIdx, cat, id);
+      if(item) item[field] = '';
+      scheduleSave();
+      renderPanel();
+    });
+  });
+
+  panel.querySelectorAll('[data-act="rmlink"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const dayIdx = Number(btn.dataset.day), cat = btn.dataset.cat, id = btn.dataset.id, idx = Number(btn.dataset.idx);
+      const item = findItem(dayIdx, cat, id);
+      if(item && item.links) item.links.splice(idx,1);
+      scheduleSave();
+      renderPanel();
+    });
+  });
+
+  panel.querySelectorAll('[data-act="rmpdf"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const dayIdx = Number(btn.dataset.day), cat = btn.dataset.cat, id = btn.dataset.id, idx = Number(btn.dataset.idx);
+      const item = findItem(dayIdx, cat, id);
+      if(item && item.pdfs) item.pdfs.splice(idx,1);
+      scheduleSave();
+      renderPanel();
+    });
+  });
+
+  panel.querySelectorAll('[data-act="openpdf"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const dayIdx = Number(btn.dataset.day), cat = btn.dataset.cat, id = btn.dataset.id, idx = Number(btn.dataset.idx);
+      const item = findItem(dayIdx, cat, id);
+      const pdf = item && item.pdfs && item.pdfs[idx];
+      if(pdf) openPdf(pdf);
+    });
+  });
+
+  function addLinkFromInput(dayIdx, cat, id){
+    const inputEl = panel.querySelector(`input[data-act="linkinput"][data-day="${dayIdx}"][data-cat="${cat}"][data-id="${id}"]`);
+    if(!inputEl) return;
+    const v = inputEl.value.trim();
+    if(!v) return;
+    const item = findItem(dayIdx, cat, id);
+    if(item){
+      if(!item.links) item.links=[];
+      item.links.push(v);
+      scheduleSave();
+      renderPanel();
+    }
+  }
+
+  panel.querySelectorAll('[data-act="addlink"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      addLinkFromInput(btn.dataset.day, btn.dataset.cat, btn.dataset.id);
+    });
+  });
+  panel.querySelectorAll('input[data-act="linkinput"]').forEach(inp=>{
+    inp.addEventListener('keydown', (e)=>{
+      if(e.key==='Enter'){
+        e.preventDefault();
+        addLinkFromInput(inp.dataset.day, inp.dataset.cat, inp.dataset.id);
+      }
+    });
+  });
+
+  panel.querySelectorAll('[data-act="pdf"]').forEach(inp=>{
+    inp.addEventListener('change', (e)=>{
+      const files = Array.from(e.target.files||[]);
+      if(files.length===0) return;
+      const dayIdx = Number(inp.dataset.day), cat = inp.dataset.cat, id = inp.dataset.id;
+      const oversized = files.filter(f=>f.size > 4*1024*1024);
+      if(oversized.length){
+        alert('部分 PDF 檔案超過 4MB，可能無法儲存於本機，建議改用連結方式。');
+      }
+      let remaining = files.length;
+      files.forEach(file=>{
+        const reader = new FileReader();
+        reader.onload = ()=>{
+          const item = findItem(dayIdx, cat, id);
+          if(item){
+            if(!item.pdfs) item.pdfs=[];
+            item.pdfs.push({ name:file.name, dataUrl:reader.result });
+          }
+          remaining--;
+          if(remaining===0){ scheduleSave(); renderPanel(); }
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+  });
+
+  panel.querySelectorAll('[data-act="rmday"]').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const dayIdx = Number(btn.dataset.day);
+      if(!confirm('確定要刪除這一天的所有內容嗎？')) return;
+      trip.days.splice(dayIdx,1);
+      if(activeDay >= trip.days.length) activeDay = trip.days.length-1;
+      scheduleSave();
+      renderHeader();
+      renderTabs();
+      renderPanel();
+    });
+  });
+}
+
+/* ---------- header events ---------- */
+document.getElementById('tripTitle').addEventListener('input', e=>{ trip.title = e.target.value; scheduleSave(); });
+document.getElementById('tripStart').addEventListener('input', e=>{ trip.startDate = e.target.value; scheduleSave(); renderTabs(); renderPanel(); });
+document.getElementById('tripDaysNum').addEventListener('change', e=>{
+  ensureDayCount(Number(e.target.value));
+  scheduleSave(); renderHeader(); renderTabs(); renderPanel();
+});
+document.getElementById('daysMinus').addEventListener('click', ()=>{
+  ensureDayCount(trip.days.length-1);
+  scheduleSave(); renderHeader(); renderTabs(); renderPanel();
+});
+document.getElementById('daysPlus').addEventListener('click', ()=>{
+  ensureDayCount(trip.days.length+1);
+  scheduleSave(); renderHeader(); renderTabs(); renderPanel();
+});
+
+/* ---------- export / import / reset ---------- */
+document.getElementById('btnExport').addEventListener('click', ()=>{
+  const blob = new Blob([JSON.stringify(trip, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  const nameBase = (trip.title || (trip.cities && trip.cities[0]) || '行程').replace(/[\\/:*?"<>|]/g,'');
+  a.href = url;
+  a.download = `${nameBase}_${trip.startDate||'trip'}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById('btnImportTrigger').addEventListener('click', ()=>{
+  document.getElementById('btnImport').click();
+});
+document.getElementById('btnImport').addEventListener('change', (e)=>{
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = ()=>{
+    try{
+      const data = JSON.parse(reader.result);
+      if(!data.days || !Array.isArray(data.days)) throw new Error('格式不正確');
+      if(!confirm('匯入會用檔案內容覆蓋這部手機現有的行程。\n要繼續嗎？')) return;
+      trip = migrateTrip(data);
+      activeDay = 0;
+      scheduleSave();
+      renderHeader(); renderTabs(); renderPanel();
+      alert('匯入成功！');
+    }catch(err){
+      alert('匯入失敗，請確認是本工具匯出的 JSON 檔案。');
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+});
+
+document.getElementById('btnReset').addEventListener('click', ()=>{
+  if(!confirm('確定要清除這部手機上的所有行程資料嗎？此動作無法復原，建議先匯出備份。\n\nGoogle Drive 上的資料不會被刪除。')) return;
+  trip = defaultTrip();
+  activeDay = 0;
+  persistLocal();
+  sync.baseRev = 0; sync.syncedAt = 0; saveSyncCfg();   // 清空後再上傳，會先問你，不會蓋掉雲端
+  syncPaused = false;
+  renderHeader(); renderTabs(); renderPanel();
+});
+
+document.getElementById('pdfModalClose').addEventListener('click', closePdfModal);
+
+/* ---------- 設定按鈕（共 N 天 右邊） ---------- */
+(function(){
+  const btn = document.getElementById('btnSettings'), card = document.getElementById('settingsCard');
+  btn.addEventListener('click', ()=>{
+    const open = card.hidden;
+    card.hidden = !open;
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    if(open) card.scrollIntoView({behavior:'smooth', block:'nearest'});
+  });
+})();
+
+/* ---------- 安裝到桌面 / 檢查 ---------- */
+(function(){
+  const $ = id => document.getElementById(id);
+  const standalone = ()=> (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
+  const ua = navigator.userAgent || '';
+  const isIOS = /iphone|ipad|ipod/i.test(ua) || (navigator.platform==='MacIntel' && navigator.maxTouchPoints>1);
+  const isAndroid = /android/i.test(ua);
+  let deferred = null;
+
+  function renderHelp(){
+    if(standalone()){ $('installState').textContent = '已以 App 方式開啟 ✓'; $('installState').className='sync-state ok';
+      $('installHelp').textContent = '目前是全螢幕 App 模式，沒有瀏覽器列。'; return; }
+    $('installState').textContent = ''; 
+    if(isIOS) $('installHelp').innerHTML = 'iPhone：請用 <b>Safari</b> 開啟本頁 → 點下方「分享」按鈕 →「<b>加入主畫面</b>」。從主畫面開啟就是全螢幕。';
+    else if(isAndroid) $('installHelp').innerHTML = 'Android：用 <b>Chrome</b> 開啟本頁 → 按下面「安裝到桌面」，或右上角 ⋮ →「<b>安裝應用程式</b>」。';
+    else $('installHelp').textContent = '用手機的 Safari（iPhone）或 Chrome（Android）開啟本頁，即可加入桌面。';
+  }
+  renderHelp();
+
+  window.addEventListener('beforeinstallprompt', e=>{ e.preventDefault(); deferred = e; $('btnInstall').hidden = false; });
+  window.addEventListener('appinstalled', ()=>{ deferred = null; $('btnInstall').hidden = true; renderHelp(); });
+  $('btnInstall').addEventListener('click', async ()=>{
+    if(!deferred) return;
+    deferred.prompt();
+    try{ await deferred.userChoice; }catch(e){}
+    deferred = null; $('btnInstall').hidden = true;
+  });
+
+  const loadImg = src => new Promise(res=>{ const i = new Image(); i.onload = ()=>res(i.naturalWidth>0); i.onerror = ()=>res(false); i.src = src; });
+
+  $('btnCheckInstall').addEventListener('click', async ()=>{
+    const rows = [];
+    const add = (ok, label, hint)=>rows.push({ok, label, hint});
+    const secure = location.protocol === 'https:' || location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    add(secure, '網址是 HTTPS', secure ? location.host : '目前是 ' + location.protocol + '，必須放在 HTTPS 網站上才能安裝成 App');
+    let m = null, murl = '';
+    const link = document.querySelector('link[rel="manifest"]');
+    try{ murl = link.href; const r = await fetch(murl, {cache:'no-store'}); if(!r.ok) throw 0; m = await r.json(); add(true, 'manifest.json 讀取成功', ''); }
+    catch(e){ add(false, 'manifest.json 讀取失敗', '請確認 manifest.json 和 index.html 在同一個資料夾，整個資料夾都已上傳'); }
+    const previews = [];
+    if(m && Array.isArray(m.icons)){
+      for(const ic of m.icons.filter(x=>['192x192','512x512'].includes(x.sizes))){
+        const u = new URL(ic.src, murl).href;
+        const ok = await loadImg(u);
+        add(ok, '圖示 ' + ic.sizes + (ic.purpose==='maskable' ? '（maskable）' : ''), ok ? '' : '讀不到 ' + ic.src + '，請確認 icons 資料夾已上傳');
+        if(ok) previews.push({u, mask: ic.purpose==='maskable'});
+      }
+    }
+    const ai = document.querySelector('link[rel="apple-touch-icon"][sizes="180x180"]');
+    if(ai){ const ok = await loadImg(ai.href); add(ok, 'iPhone 圖示 180×180', ok ? '' : '讀不到 ' + ai.getAttribute('href')); if(ok) previews.push({u: ai.href, mask:false}); }
+    let sw = false;
+    if('serviceWorker' in navigator){ try{ const reg = await navigator.serviceWorker.getRegistration(); sw = !!(reg && (reg.active || reg.waiting || reg.installing)); }catch(e){} }
+    add(sw, '離線功能（sw.js）', sw ? '已啟用' : (secure ? '尚未啟用，重新整理一次再檢查' : '需要 HTTPS'));
+    add(null, '目前開啟方式', standalone() ? 'App 全螢幕 ✓' : '瀏覽器（有網址列）。安裝後請從桌面圖示開啟，才會全螢幕');
+
+    const back = document.createElement('div'); back.className = 'dlg-back';
+    const box = document.createElement('div'); box.className = 'dlg'; back.appendChild(box);
+    const h = document.createElement('h4'); h.textContent = '安裝檢查'; box.appendChild(h);
+    const ul = document.createElement('ul'); ul.className = 'chk-list';
+    rows.forEach(r=>{
+      const li = document.createElement('li'); li.className = r.ok === null ? 'info' : (r.ok ? 'ok' : 'bad');
+      li.textContent = (r.ok === null ? 'ⓘ ' : (r.ok ? '✓ ' : '✗ ')) + r.label;
+      if(r.hint){ const sm = document.createElement('small'); sm.textContent = r.hint; li.appendChild(sm); }
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    if(previews.length){
+      const pv = document.createElement('div'); pv.className = 'chk-prev';
+      previews.forEach(p=>{ const i = document.createElement('img'); i.src = p.u; i.alt = ''; if(p.mask) i.className = 'mask'; pv.appendChild(i); });
+      box.appendChild(pv);
+    }
+    const bt = document.createElement('div'); bt.className = 'dlg-btns';
+    const ok = document.createElement('button'); ok.type = 'button'; ok.textContent = '關閉'; ok.addEventListener('click', ()=>back.remove());
+    bt.appendChild(ok); box.appendChild(bt);
+    back.addEventListener('click', e=>{ if(e.target===back) back.remove(); });
+    document.body.appendChild(back);
+  });
+})();
+
+/* ---------- 設定卡片：同步介面 ---------- */
+(function(){
+  const $ = id => document.getElementById(id);
+  $('syncUrl').value = sync.url || '';
+  $('syncKey').value = sync.key || '';
+  $('syncAuto').checked = sync.auto !== false;
+  setSyncState(syncEnabled() ? '已設定' : '未設定');
+
+  // 填好網址和密碼就自動記住（不用再按任何按鈕），清空欄位即視為停用
+  const onCfgInput = ()=>{
+    const url = $('syncUrl').value.trim(), key = $('syncKey').value;
+    if(!url || !key){
+      if(!url) sync.url = ''; if(!key) sync.key = '';
+      saveSyncCfg(); setSyncState('未設定'); return;
+    }
+    if(readCfgFromUI(false)){ syncPaused = false; setSyncState('已設定'); }
+  };
+  $('syncUrl').addEventListener('input', onCfgInput);
+  $('syncKey').addEventListener('input', onCfgInput);
+
+  $('btnSyncTest').addEventListener('click', syncTest);
+  $('btnSyncUp').addEventListener('click', ()=>syncUpload(true, false));
+  $('btnSyncDown').addEventListener('click', ()=>syncDownload(true));
+  $('btnSyncOff').addEventListener('click', ()=>{
+    if(!confirm('清除這部手機上的 Apps Script 網址和密碼？\n（Google Drive 上的資料不會被刪除）')) return;
+    sync.url = ''; sync.key = ''; sync.baseRev = 0; sync.syncedAt = 0; saveSyncCfg();
+    $('syncUrl').value = ''; $('syncKey').value = '';
+    setSyncState('未設定');
+  });
+  $('btnShowPw').addEventListener('click', ()=>{
+    const k = $('syncKey'), show = k.type === 'password';
+    k.type = show ? 'text' : 'password';
+    $('btnShowPw').textContent = show ? '隱藏' : '顯示';
+  });
+  $('syncAuto').addEventListener('change', ()=>{
+    sync.auto = $('syncAuto').checked; syncPaused = false; saveSyncCfg();
+    if(sync.auto) tryAutoUpload();
+  });
+  $('btnCopyGs').addEventListener('click', async ()=>{
+    const code = $('gsCode').textContent;
+    try{ await navigator.clipboard.writeText(code); alert('已複製。到 script.google.com 的專案貼上即可。'); }
+    catch(e){
+      const ta = document.createElement('textarea'); ta.value = code; document.body.appendChild(ta);
+      ta.select(); try{ document.execCommand('copy'); alert('已複製。'); }catch(_){ alert('複製失敗，請改用匯出的 Apps_Script程式碼.gs 檔案。'); }
+      ta.remove();
+    }
+  });
+})();
+
+/* ---------- init ---------- */
+renderHeader();
+renderTabs(true);
+renderPanel();
+tryAutoUpload();   // 離線時改的資料，開啟 App 時補上傳
+
+/* ---------- PWA：離線使用 ---------- */
+if('serviceWorker' in navigator && /^https?:$/.test(location.protocol)){
+  window.addEventListener('load', ()=>{ navigator.serviceWorker.register('sw.js').catch(()=>{}); });
+}
+
+})();
+</script>
+</body>
+</html>
